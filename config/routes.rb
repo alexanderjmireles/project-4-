@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
-   get '/auth/:provider/callback', to: 'sessions#create'
+   get '/auth/twitter', to: 'sessions#create'
    delete '/logout', to: 'sessions#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
